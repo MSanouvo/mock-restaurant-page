@@ -1,7 +1,12 @@
 import "./style.css"
-import macraonIamge from "./images/macaron.jpg"
+import { displayPage } from "./home"
+import { displayMenu } from "./menu"
 
-console.log('Hello World')
-const image = document.createElement('img')
-image.src = macraonIamge
-document.body.appendChild(image)
+displayPage()
+
+const home = document.querySelector('#home')
+const menu = document.querySelector('#menu')
+const about = document.querySelector('#about')
+
+home.addEventListener('click', displayPage)
+menu.addEventListener('click', displayMenu)
