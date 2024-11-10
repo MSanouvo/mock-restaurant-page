@@ -4,7 +4,7 @@ function displayAbout(){
     header.textContent = 'About Us'
     const about = document.createElement('div')
     const aboutText = document.createElement('span')
-    aboutText.textContent = 'Treating the community since XXXX. Contact us for catering or custom orders.'
+    aboutText.textContent = 'Treating the community since XXXX. Contact us for catering or custom orders. Treating the community since XXXX. Contact us for catering or custom orders.'
     const contact = document.createElement('div')
     const contactNumber = document.createElement('span')
     const contactEmail = document.createElement('a')
@@ -16,8 +16,9 @@ function displayAbout(){
 
     about.classList.add('about')
     contact.classList.add('contact')
+    content.classList.add('about-us')
 
-    content.appendChild(header)
+    about.appendChild(header)
     about.appendChild(aboutText)
     contact.appendChild(contactHeader)
     contact.appendChild(contactNumber)
